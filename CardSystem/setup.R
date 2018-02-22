@@ -50,5 +50,9 @@ startCS <- function(n) {
   scan()
   print(ans_tf())
   print(printans())
+
+#################練習用に入力できるよ##########
+  scan()
+  print(ans_tf())
   }
 }
