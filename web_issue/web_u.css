@@ -1,0 +1,12 @@
+hr {
+	border-width: 5px;
+	border-color: #bbffdb;
+	border-style: solid;
+}
+
+li {
+	font-size: 24px;
+}
+
+a:link {#0000ff;}
+a:visited {#ff0000;}
