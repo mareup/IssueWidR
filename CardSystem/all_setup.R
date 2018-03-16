@@ -1,6 +1,6 @@
 ### import data
 ### データ読み込み
-card_utf <- read.csv("~/work/share/CardSystem/CS_shell/card_utf.csv",stringsAsFactors = FALSE)
+card_utf <- read.csv("",stringsAsFactors = FALSE)
 
 ### create environment
 ### 環境の立ち上げ
@@ -15,7 +15,7 @@ setup <- function(card_utf) {
 	card_col <- 0
 	card_row <- matrix(0,1:332,1)
   card_ans <- 0
-	ans_f <- read.csv("~/work/share/CardSystem/CS_shell/ans_f.csv",stringsAsFactors = FALSE)
+	ans_f <- read.csv("",stringsAsFactors = FALSE)
   section_num <- 0
   check_data <- matrix(0,1:332,1)
   
@@ -98,7 +98,7 @@ setup <- function(card_utf) {
 
 	PRINTFAIL <- function() {
 #	print(ans_f)
-	  write.csv(ans_f , file = "~/work/share/CardSystem/CS_shell/ans_f.csv",row.names = FALSE)
+	  write.csv(ans_f , file = "",row.names = FALSE)
 	}
 
   list(check_section = CHECK_SECTION, random_col = RANDOM_COL, random_row = RANDOM_ROW, printcard = PRINTCARD, scan = SCAN, ans_tf = ANS_TF, printans = PRINTANS, prac_scan = PRAC_SCAN,resetting = RESETTING, printfail = PRINTFAIL)
